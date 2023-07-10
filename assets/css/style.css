@@ -1,3 +1,39 @@
+/* Color Profile
+#EFEEF3 Light shades Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
+#82B7DD Light accent Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
+#2A64B6 Main brand color This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
+#7CA1CC Dark accent Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
+#134198 Dark shades Use as the text color for dark-on-light designs, or as the background for inverted designs.
+*/
+
 body {
-    background-color: blue;
+    background-color: #EFEEF3;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #134198;
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+}
+
+#game-area {
+    background-color: #82B7DD ;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
