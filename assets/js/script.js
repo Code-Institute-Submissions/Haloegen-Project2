@@ -1,10 +1,12 @@
-(function() {
-    let playerScore = 0;
-    let computerScore = 0;
-    let choices = ["rock", "paper", "scissors", "lizard", "spock"]
+
+    const playerScore = 0;
+    const computerScore = 0;
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"]
+    const playerImage = document.getElementById("player-image")
+    const computerImage = document.getElementById("computer-image")
 
     function computerPlay() {
-            let randomIndex = Math.floor(Math.random() * choices.length);
+             randomIndex = Math.floor(Math.random() * choices.length);
             return choices[randomIndex];
           }
     
@@ -14,6 +16,8 @@
       let computer = computerSelection;
 
       if (player === computer) {
+        playerImg.src = `assets/images/${player}.png`;
+        comImg.src = `assets/images/${computer}.png`;
         return "It's a tie!";
       }
 
@@ -25,15 +29,20 @@
         (player === "spock" && (computer === "rock" || computer === "scissors"))
       ) {
         playerScore++;
+        playerImg.src = `assets/images/${player}.png`;
+        comImg.src = `assets/images/${computer}.png`;
         return `You win! ${player} beats ${computer}.`;
       }
 
       computerScore++;
+      playerImg.src = `assets/images/${player}.png`;
+      comImg.src = `assets/images/${computer}.png`;
       return `You lose! ${computer} beats ${player}.`;
+      
     }
 
-    function handleClick(e) {
-      let playerSelection = e.target.id;
+    function handleClick(event) {
+      let playerSelection = event.target.id;
       let computerSelection = computerPlay();
       let result = playRound(playerSelection, computerSelection);
       displayResult(playerSelection, computerSelection, result);
@@ -41,10 +50,11 @@
     }
 
     function displayResult(playerMove, computerMove, result) {
-       let playerMoveElement = document.getElementById("player-move");
+      let playerMoveElement = document.getElementById("player-move");
       let computerMoveElement = document.getElementById("computer-move");
       let resultElement = document.getElementById("result");
       
+
       playerMoveElement.textContent = playerMove;
       computerMoveElement.textContent = computerMove;
       resultElement.textContent = result;
@@ -62,4 +72,3 @@
     buttons.forEach(button => {
       button.addEventListener("click", handleClick);
     });
-  })();
