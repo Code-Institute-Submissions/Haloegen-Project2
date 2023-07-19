@@ -17,7 +17,7 @@ h1, h2 {
     color: #134198;
 }
 
-.btn {
+.buttn {
     width: 220px;
     height: 60px;
     font-family: sans-serif;
@@ -26,14 +26,35 @@ h1, h2 {
     color: black;
 }
 
-#game-area {
-    background-color: #82B7DD ;
-    box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
+
+
+#image-area {
+    background-color: grey;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border: 2px orange inset;
+}
+
+#image-area img {
+    width: 400px;
+    height: 400px;
+    margin:0 auto;
+    margin-top: 2%;
+}
+
+.player1 {
+    color: blue;
+}
+
+.comp1 {
+    color: red;
+}
+
+#player-choice {
+    background-color: blue;
+}
+
+#comp-choice {
+    background-color: red;
 }
