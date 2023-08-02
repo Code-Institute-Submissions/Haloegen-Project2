@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,42 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-<h1>
-    Spockin Scissors-place holder-text
-</h1>
+        <h1>
+            Spockin Scissors-place holder-text
+        </h1>
+        <nav>
+
+        </nav>
+        <button id="reset">Reset</button>
     </header>
     <div id="game-area">
-    <div>
-        <button id="rock" class="buttn">Rock</button>
-        <button id="paper" class="buttn">Paper</button>
-        <button id="scissors" class="buttn">Scissors</button>
-        <button id="lizard" class="buttn">Lizard</button>
-        <button id="spock" class="buttn">Spock</button>
+        <div>
+            <button id="rock" class="buttn">Rock</button>
+            <button id="paper" class="buttn">Paper</button>
+            <button id="scissors" class="buttn">Scissors</button>
+            <button id="lizard" class="buttn">Lizard</button>
+            <button id="spock" class="buttn">Spock</button>
+        </div>
+        <div id="image-area">
+            <span id="player-choice"><img id="player-select" src="" alt=""></span>
+            Vs
+            <span id="comp-choice"> <img id="computer-select" src="" alt=""></span>
+        </div>
+        <div>
+            <h2> <span class="player1">Your</span> Move: <span id="player-move" class="player1"></span></h2>
+            <h2> <span class="comp1">Computer's</span> Move: <span id="computer-move" class="comp1"></span></h2>
+            <h2>Result: <span id="result"></span></h2>
+        </div>
+        <div>
+            <h2>Score</h2>
+            <p> <span class="player1">Player:</span> <span id="player-score">0</span></p>
+            <p> <span class="comp1">Computer:</span> <span id="computer-score">0</span></p>
+        </div>
     </div>
-    <div id="image-area">
-     <span id="player-choice"><img id="player-select" src="" alt=""></span> 
-      Vs
-      <span id="comp-choice"> <img id="computer-select" src="" alt=""></span>
-    </div>
-  <div>
-    <h2> <span class="player1">Your</span> Move: <span id="player-move"></span></h2>
-    <h2> <span class="comp1">Computer's</span> Move: <span id="computer-move"></span></h2>
-    <h2>Result: <span id="result"></span></h2>
-  </div>
-  <div>
-    <h2>Score</h2>
-    <p> <span class="player1">Player:</span> <span id="player-score">0</span></p>
-    <p> <span class="comp1">Computer:</span> <span id="computer-score">0</span></p>
-  </div>
-</div>
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
