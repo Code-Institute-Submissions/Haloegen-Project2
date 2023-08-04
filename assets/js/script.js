@@ -4,9 +4,10 @@ let computerScore = 0;
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerImg = document.getElementById("player-select")
 let comImg = document.getElementById("computer-select");
-const buttons = document.querySelectorAll(".buttn");
-const resetButton.document.getElementById("reset")
 const winningScore = 10;
+
+const buttons = document.querySelectorAll(".buttn");
+const resetButton = document.getElementById("reset");
 
 // This code generates the computers turn
 function computerPlay() {
@@ -56,9 +57,19 @@ function playRound(playerSelection, computerSelection) {
 function endGame(winner) {
     buttons.forEach(button => {
         button.disabled = true;
-    })
+    });
     resetButton.disabled = false;
     alert(`${winner} wins! Game Over.`)
+}
+
+function resetGame() {
+    playerScore = 0 
+    computerScore = 0
+    buttons.forEach(button => {
+    button.disabled = false;
+    });
+    resetButton.disabled = true;
+    updateScore();
 }
 // plays the game, and runs through each function
 
@@ -95,3 +106,6 @@ function updateScore() {
 buttons.forEach(button => {
     button.addEventListener("click", handleClick);
 });
+
+resetButton.addEventListener("click", resetGame);
+resetGame();
