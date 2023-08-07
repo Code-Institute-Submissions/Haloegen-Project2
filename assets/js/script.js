@@ -4,7 +4,7 @@ let computerScore = 0;
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerImg = document.getElementById("player-select")
 let comImg = document.getElementById("computer-select");
-const winningScore = 5;
+let winningScore = 5;
 
 const buttons = document.querySelectorAll(".buttn");
 const resetButton = document.getElementById("reset");
