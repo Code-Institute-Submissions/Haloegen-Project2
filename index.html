@@ -8,23 +8,26 @@
     <script src="https://kit.fontawesome.com/47ebf3a1f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Document</title>
+    <title>R.P.S.L.S</title>
 </head>
 
 <body>
     <header>
         <h1>
-            Spockin Scissors-place holder-text
+            Rock, Paper, Scissors.
         </h1>
-       
-        <nav>
-
-        </nav>
-        
     </header>
+    <div>
+        <label for="winning-score">First to Score:</label>
+        <select id="winning-score">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
     <div id="game-area">
-       
-        <div>
+
+        <div id="button-box">
             <button id="rock" class="buttn">Rock</button>
             <button id="paper" class="buttn">Paper</button>
             <button id="scissors" class="buttn">Scissors</button>
@@ -46,11 +49,24 @@
             <p> <span class="player1">Player:</span> <span id="player-score">0</span></p>
             <p> <span class="comp1">Computer:</span> <span id="computer-score">0</span></p>
         </div>
-    </div>
-    <div>
-        <button id="reset">Reset</button>
+        <div>
+            <button id="reset">Reset</button>
+        </div>
     </div>
     
+    <footer>
+        <div>
+            <h1>
+                Rules
+            </h1>
+            <p>
+                Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes
+                scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock,
+                and as it always has, rock crushes scissors.
+            </p>
+        </div>
+        <div> Contact Info</div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 

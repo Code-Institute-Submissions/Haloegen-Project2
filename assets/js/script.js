@@ -4,10 +4,11 @@ let computerScore = 0;
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerImg = document.getElementById("player-select")
 let comImg = document.getElementById("computer-select");
-const winningScore = 10;
+const winningScore = 5;
 
 const buttons = document.querySelectorAll(".buttn");
 const resetButton = document.getElementById("reset");
+const winningScoreSelect = document.getElementById("winning-score");
 
 // This code generates the computers turn
 function computerPlay() {
@@ -24,7 +25,9 @@ function playRound(playerSelection, computerSelection) {
 
     if (player === computer) {
         playerImg.src = `assets/images/${player}.png`;
+        playerImg.alt = `${player}`;
         comImg.src = `assets/images/${computer}.png`;
+        comImg.alt = `${computer}`;
         return "It's a tie!";
     }
 
@@ -37,7 +40,9 @@ function playRound(playerSelection, computerSelection) {
     ) {
         playerScore++;
         playerImg.src = `assets/images/${player}.png`;
+        playerImg.alt = `${player}`;
         comImg.src = `assets/images/${computer}.png`;
+        comImg.alt = `${computer}`;
         if (playerScore === winningScore){
             endGame("Player")
         }
@@ -46,7 +51,9 @@ function playRound(playerSelection, computerSelection) {
 
     computerScore++;
     playerImg.src = `assets/images/${player}.png`;
+    playerImg.alt = `${player}`;
     comImg.src = `assets/images/${computer}.png`;
+    comImg.alt = `${computer}`;
     if (computerScore === winningScore) {
         endGame("Computer")
     }
@@ -58,6 +65,7 @@ function endGame(winner) {
     buttons.forEach(button => {
         button.disabled = true;
     });
+    winningScoreSelect.disabled = false;
     resetButton.disabled = false;
     alert(`${winner} wins! Game Over.`)
 }
@@ -68,8 +76,14 @@ function resetGame() {
     buttons.forEach(button => {
     button.disabled = false;
     });
+    winningScoreSelect.disabled = true;
     resetButton.disabled = true;
     updateScore();
+}
+
+function handleWinningScoreChange() {
+    winningScore = parseInt(winningScoreSelect.value);
+    resetGame();
 }
 // plays the game, and runs through each function
 
@@ -107,5 +121,6 @@ buttons.forEach(button => {
     button.addEventListener("click", handleClick);
 });
 
+winningScoreSelect.addEventListener("change", handleWinningScoreChange);
 resetButton.addEventListener("click", resetGame);
-resetGame();
+    resetGame();

@@ -1,47 +1,59 @@
 /* Color Profile
-#EFEEF3 Light shades Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
-#82B7DD Light accent Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
-#2A64B6 Main brand color This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
-#7CA1CC Dark accent Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
-#134198 Dark shades Use as the text color for dark-on-light designs, or as the background for inverted designs.
+#F6F6F8
+#87B4C9
+#6994C2
+#9A968E
+#21262C
 */
 
 body {
-    background-color: #EFEEF3;
+    background-color: #F6F6F8;
     font-family: "Raleway", sans-serif;
-    color: black;
+    color: #21262C;
     text-align: center;
 }
 
 h1,
 h2 {
-    color: #134198;
+    color: #6994C2;
+}
+
+#button-box {
+    position: relative;
+    margin: auto;
+
 }
 
 .buttn {
-    width: 220px;
-    height: 60px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px;
+    width: fit-content;
 }
+
+.buttn:hover {
+    background-color: #9A968E;
+}
+
+
 
 
 
 #image-area {
-    background-color: grey;
-    width: 1000px;
-    height: 500px;
+    background-color: #6994C2;
+    width: 60%;
+    height: 40%;
     margin: auto;
-    border: 2px orange inset;
+    border: 10px #21262C inset;
 }
 
 #image-area img {
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .player1 {
@@ -58,4 +70,56 @@ h2 {
 
 #comp-choice {
     background-color: red;
+}
+
+header {
+
+    position: relative;
+    border: 5px solid black;
+    width: fit-content;
+    height: 5rem;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    float: left;
+
+}
+
+#game-area {
+    margin: 0 auto;
+}
+
+#scoreboard {
+    margin-top: 30px;
+}
+
+#reset {
+    margin-top: 20px;
+    background-color: #87B4C9;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #9A968E;
+}
+
+#reset:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/*
+Footer
+*/
+
+footer {
+    background-color: #120F14;
+    color: #ECE4EB;
+    width: 100%;
+    height: 10%;
 }
