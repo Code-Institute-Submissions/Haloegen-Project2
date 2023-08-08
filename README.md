@@ -12,7 +12,7 @@ The site is targeted towards people who enjoy games of chance with no consequenc
 
   - Featured at the top of the page, the Rock paper scissors heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-![Logo](media/love_maths_logo.png)
+![Logo](assets/images/Header.png)
 
 - __The Game Area__
 
