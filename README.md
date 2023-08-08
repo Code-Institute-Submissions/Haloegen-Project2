@@ -2,7 +2,7 @@
 Rock Paper Scissors is a site that allows the user to play vs a computer with a game of different lengths and against an opponent that chooses options randomly.
 The site is targeted towards people who enjoy games of chance with no consequences and gives them the ability to choose and decide how long they play for.
 
-![Responsice Mockup](media/love_maths_mockup.png)
+![Responsice Mockup](assets/images/mockup.png)
 
 ## Features 
 
@@ -12,7 +12,7 @@ The site is targeted towards people who enjoy games of chance with no consequenc
 
   - Featured at the top of the page, the Rock paper scissors heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-![Logo](assets/images/Header.png)
+![Header](assets/images/Header.png)
 
 - __The Game Area__
 
@@ -20,13 +20,13 @@ The site is targeted towards people who enjoy games of chance with no consequenc
   - Allowing the player to interact and show effective user design in showing the users actions and giving them control
   - It highlights the move each player and computer made in a round with a graphic and highlighted text for ease of clarity
 
-![Game](media/love_maths_icons.png)
+![Game](assets/images/game-area.png)
 
 - __The Image Area__
 
   - This section will show with the help of Javascript, a graphic that updates when the player or computer have selected a choice
 
-![score](media/love_maths_answer.png)
+![Graphics](assets/images/Graphic%20area.png)
 
 
 - __The Score Board__
@@ -34,11 +34,8 @@ The site is targeted towards people who enjoy games of chance with no consequenc
   - This section updates after every round of play
   - It shows the score in highlighted colors for ease of clarity and also explains how, and why you lost/won a round
 
-![Question](media/love_maths_question.png)
+![Scoreboard](assets/images/Score%20board.png)
 
-- __First User Experience__ 
- - 
- - 
 
 ### Features Left to Implement
 
@@ -47,13 +44,16 @@ The site is targeted towards people who enjoy games of chance with no consequenc
 - A username interface which allows players to be unique
 - A multiplayer option which allows players over the internet to play against each other, in delayed or real time.
 ## Testing 
+
 - __User Experience__
+
  -  The user loads up the site and immediately sees the name of the website, the buttons available and if they scroll to the bottom they can see the rules of the game.
  - By selecting an option they can begin the rounds of play, which for the first time visitor is set to 5, but after their first game they are able to modify that.
  - The score board and move selector are highlighted in different colors to better help identify and for ease of clarity.
  - The moves are also explained using text for help with screen readers.
 
 - __Manual Testing__
+
 - Each button operates and gives visual feed back to the player.
 - When the maximum score is reached the reset and round select buttons become accessible and the play buttons become disabled.
 - after selecting either a round of play or the reset button play resumes.
